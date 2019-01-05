@@ -18,12 +18,12 @@ func WxSignRdsInit(rc *redis.Client) {
 }
 
 // PushToken 将微信token 存到 redis 中
-func (wSign *WxSign) PushToken(token string, duration time.Duration) {
+func (wSign *WxSign) PushTokenByCache(token string, duration time.Duration) {
 	rdsCli.Set(wSign.TokenRdsKey, token, duration)
 }
 
 // PushTicket 将微信jsticket 存到 redis 中
-func (wSign *WxSign) PushTicket(token string, duration time.Duration) {
+func (wSign *WxSign) PushTicketByCache(token string, duration time.Duration) {
 	rdsCli.Set(wSign.TicketRdsKey, token, duration)
 }
 
