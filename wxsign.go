@@ -3,13 +3,15 @@ package wxsign
 const (
 	// APIURLPrefix 微信授权请求
 	WxAPIURLPrefix = "https://api.weixin.qq.com/cgi-bin"
-	// AuthURL 获取access_token
+	// AuthURL get access_token route
 	WxAuthURL = "/token?grant_type=client_credential&"
-	// GetTicketURL 获取ticket
+	// GetTicketURL get ticket route
 	WxGetTicketURL = "/ticket/getticket?"
 
 	// TokenExpire token缓存的时间
 	TokenExpire = 3600
+	// TicketExpire tocket缓存时间
+	TicketExpire = 3600
 )
 
 type WxSign struct {
