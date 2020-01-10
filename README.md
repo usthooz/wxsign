@@ -5,6 +5,8 @@
 
 微信公众号二次分享、请求Js签名.
 
+- 更多逻辑已经迁移到[owechat](https://github.com/usthooz/owechat)
+
 ## 功能
 - 获取微信分享所需要的js签名信息
 
